@@ -11,4 +11,4 @@ def pysound(file):
         import pygame
 
 if __name__ == "__main__":
-    pysound(file=)
+    pysound(file="happy-birthday-whistled.wav")
