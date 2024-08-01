@@ -1,8 +1,8 @@
-import toga
+import sys
 
 
 def mypysound(file):
-    platform = toga.platform.current_platform
+    platform = sys.platform
     if platform == "android":
         from android.media import MediaPlayer
         from os.path import dirname, join
