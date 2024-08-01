@@ -4,7 +4,13 @@ import toga
 def mypysound(file):
     platform = toga.platform.current_platform
     if platform == "android":
-        pass
+        from android.media import MediaPlayer
+        from os.path import dirname, join
+        player = MediaPlayer()
+        sound = join(dirname(__file__), file)
+        player.setDataSource(sound)
+        player.prepare()
+        player.start()
     if platform == "ios":
         print("IOS is not supported at the moment")
     else:
