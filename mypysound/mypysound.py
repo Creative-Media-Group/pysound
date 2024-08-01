@@ -1,8 +1,8 @@
-import sys
+import platform
 
 
 def mypysound(file):
-    platform = sys.platform
+    platform = platform.system()
     if platform == "android":
         from android.media import MediaPlayer
         from os.path import dirname, join
