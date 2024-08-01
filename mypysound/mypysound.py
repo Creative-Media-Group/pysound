@@ -1,7 +1,7 @@
 import toga
 
 
-def pysound(file):
+def mypysound(file):
     platform = toga.platform.current_platform
     if platform == "android":
         pass
