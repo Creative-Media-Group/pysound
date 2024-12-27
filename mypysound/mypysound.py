@@ -1,5 +1,6 @@
 def play(file):
     import platform
+
     platform = platform.system().lower()
     if platform == "android":
         from android.media import MediaPlayer
@@ -11,8 +12,9 @@ def play(file):
         player.prepare()
         player.start()
     if platform != "android" and platform != "ios":
-        import playsound
-        from pathlib import Path
+        from playsound3 import playsound
+
+        playsound(file)
 
 
 if __name__ == "__main__":

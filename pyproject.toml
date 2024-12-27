@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mypysound"
-version = "0.1.0"
+version = "2024.12.27"
 description = ""
 authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
 repository = "https://github.com/Creative-Media-Group/pysound"
@@ -9,7 +9,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-playsound3 = "^2.5.1"
+playsound3 = "*"
 
 
 [build-system]

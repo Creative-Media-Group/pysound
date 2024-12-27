@@ -28,4 +28,4 @@ certifi = "*"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "61b2d7d646e40141f3eb3b5518982a9ebe4f18cb5d21cc9ee845ebec438e8c7d"
+content-hash = "0bf79a5023b5c202c85c4c509a2ce3a1230a8b376f808870135f03b563caba8a"
