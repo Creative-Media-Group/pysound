@@ -1,1 +1,1 @@
-from mypysound import mypysound
+from mypysound.mypysound import play

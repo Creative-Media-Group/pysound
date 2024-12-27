@@ -1,27 +1,19 @@
-import platform
-
-
-def mypysound(file):
+def play(file):
+    import platform
     platform = platform.system().lower()
     if platform == "android":
         from android.media import MediaPlayer
         from os.path import dirname, join
 
         player = MediaPlayer()
-        sound = join(dirname(__file__), file)
+        sound = file
         player.setDataSource(sound)
         player.prepare()
         player.start()
-    if platform == "ios":
-        print("IOS is not supported at the moment")
-    else:
-        import pygame
-
-        pygame.mixer.init()
-        pygame.mixer.music.load(filename=file)
-        pygame.mixer.music.set_volume(1.0)
-        pygame.mixer.music.play()
+    if platform != "android" and platform != "ios":
+        import playsound
+        from pathlib import Path
 
 
 if __name__ == "__main__":
-    pysound(file="happy-birthday-whistled.wav")
+    play(file="happy-birthday-whistled.wav")
