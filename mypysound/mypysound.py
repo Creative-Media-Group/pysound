@@ -1,7 +1,9 @@
-def play(file):
-    import platform
+import platform
 
-    platform = platform.system().lower()
+platform = platform.system().lower()
+
+
+def play(file, platform=platform):
     if platform == "android":
         from android.media import MediaPlayer
         from os.path import dirname, join
